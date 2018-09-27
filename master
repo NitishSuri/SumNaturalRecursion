@@ -1,0 +1,23 @@
+# SumNaturalRecursion
+40th program on c
+int sum(int n);
+#include<stdio.h>
+int main()
+{
+int number,result;
+printf("enter a positive number:");
+scanf("%d",&number);
+result=sum(number);
+printf("sum = %d",result);
+return (0);
+}
+int sum(int num)
+{
+if (num!=0)
+{
+return num+ sum(num-1);
+}
+else 
+return num;
+}
+
